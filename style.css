@@ -1,0 +1,133 @@
+style.css
+
+/* Configurações gerais da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4ff;
+    color: #222;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Área principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 65vh;
+}
+
+/* Cartão do sorteio */
+.card {
+    background-color: white;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border: 2px solid #dbe5ff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #1d4ed8;
+    margin-bottom: 12px;
+}
+
+.card p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Campo para os nomes */
+textarea {
+    width: 100%;
+    height: 180px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Botão de sorteio */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+#resultado h3 {
+    color: #1e40af;
+    font-size: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
