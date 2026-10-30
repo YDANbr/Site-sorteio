@@ -1,6 +1,4 @@
-style.css
-
-/* Configurações gerais da página */
+/* Configurações gerais */
 * {
     margin: 0;
     padding: 0;
@@ -26,20 +24,15 @@ header h1 {
     margin-bottom: 10px;
 }
 
-header p {
-    font-size: 16px;
-}
-
 /* Área principal */
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 40px 20px;
     min-height: 65vh;
 }
 
-/* Cartão do sorteio */
+/* Cartão */
 .card {
     background-color: white;
     width: 100%;
@@ -56,19 +49,18 @@ header p {
 }
 
 .card p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     line-height: 1.5;
 }
 
-/* Campo para os nomes */
+/* Campo de participantes */
 textarea {
     width: 100%;
     height: 180px;
     padding: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: 2px solid #cbd5e1;
     border-radius: 8px;
-    font-family: Arial, sans-serif;
     font-size: 16px;
     resize: vertical;
 }
@@ -78,7 +70,13 @@ textarea:focus {
     border-color: #2563eb;
 }
 
-/* Botão de sorteio */
+/* Contador */
+#contador {
+    color: #475569;
+    font-weight: bold;
+}
+
+/* Botões */
 button {
     width: 100%;
     padding: 15px;
@@ -90,6 +88,7 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 10px;
 }
 
 button:hover {
@@ -110,6 +109,48 @@ button:hover {
 #resultado h3 {
     color: #1e40af;
     font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#resultado h2 {
+    color: #2563eb;
+    font-size: 26px;
+}
+
+/* Histórico */
+.historico {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8fafc;
+    border: 1px solid #dbe5ff;
+    border-radius: 10px;
+}
+
+.historico h2 {
+    margin-bottom: 15px;
+}
+
+#listaSorteados {
+    padding-left: 25px;
+}
+
+#listaSorteados li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #eff6ff;
+    border-radius: 6px;
+    color: #1e40af;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+/* Botão limpar */
+.botao-limpar {
+    background-color: #64748b;
+}
+
+.botao-limpar:hover {
+    background-color: #475569;
 }
 
 /* Rodapé */

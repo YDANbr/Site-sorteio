@@ -1,5 +1,3 @@
-index.html
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -17,8 +15,9 @@ index.html
 
     <main class="container">
         <section class="card">
+
             <h2>Participantes do sorteio</h2>
-            <p>Digite os nomes abaixo, colocando um nome por linha.</p>
+            <p>Digite os nomes ou números, colocando um por linha.</p>
 
             <textarea id="nomes"
                 placeholder="Exemplo:
@@ -27,23 +26,32 @@ João
 Ana
 Pedro"></textarea>
 
+            <p id="contador">Participantes restantes: 0</p>
+
             <button onclick="sortear()">Sortear ganhador</button>
 
             <div id="resultado">
                 <h3>O ganhador aparecerá aqui!</h3>
             </div>
+
+            <section class="historico">
+                <h2>🏆 Ordem dos sorteados</h2>
+                <ol id="listaSorteados">
+                    <li>Nenhum sorteio realizado.</li>
+                </ol>
+            </section>
+
+            <button class="botao-limpar" onclick="limparSorteio()">
+                Limpar sorteio
+            </button>
+
         </section>
     </main>
 
-
-       
-<footer>
-    <p>© 2026 Sorteio Fácil - Desenvolvido por Thiago Pereira.</p>
-</footer>
-
+    <footer>
+        <p>esenvolvido por Thiago | Atividade Prática de HTML e CSS - 2026</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
